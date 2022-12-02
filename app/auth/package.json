@@ -1,0 +1,37 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev src/index.ts",
+    "test": "jest --watchAll --no-cache",
+    "test:ci": "jest"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "./src/test/setup.ts"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ldtickets/common": "^1.0.1",
+    "@types/cookie-session": "^2.0.39",
+    "@types/express": "^4.17.6",
+    "@types/jsonwebtoken": "^8.3.9",
+    "@types/mongoose": "^5.7.15",
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "express-validator": "^6.4.1",
+    "jest": "^27.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.12",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  }
+}
