@@ -4,12 +4,7 @@ Ticket selling app based on Microservices architecture built with Node, React, D
 
 ## What Technology I Used
 
-I built a full stack application, I used a variety of technologies. On the frontend, I used React and Next JS to present content to users. Each service is created using Node and Express. Data for each service is held in either a Mongo database or Redis. The entire app is deployed and runs in Docker containers executed in a Kubernetes cluster. Finally, almost all of the code in this app is written with Typescript.
-
-
-### Structure
-
-The app consists of 7 different services designed to comminicate in an asynchronous fashion. Services are written in TypeScript, running on NodeJS and built with NextJS (front-end), Express and MongoDB (back-end) and NATS Streaming Server to communicate via events. Each service lives in its own Docker container, managed by Kubernetes. For routing the `ingress-nginx` controller is used. The app also uses Sendgrid as an email API provider.
+I built a full stack application, I used a variety of technologies. On the frontend, I used React and Next JS to present content to users. Each service is created using NodeJS and Express. Data for each service is held in either a MongoDB database or Redis and NATS Streaming Server to communicate via events. The entire app is deployed and runs in Docker containers executed in a Kubernetes cluster. For routing the `ingress-nginx` controller is used. The app also uses Sendgrid as an email API provider. Finally, almost all of the code in this app is written with Typescript.
 
 All services include a shared library as a dependency, called `@tick-it/common`, where all crucial type definitions live. This shared library is also included in this repository as a submodule.
 
