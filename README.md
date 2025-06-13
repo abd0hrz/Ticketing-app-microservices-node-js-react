@@ -1,3 +1,10 @@
+# Ticketing application built with Node.js, React, and Kubernetes using a microservices architecture.
+
+## Architecture
+
+![Ticketing Microservices Architecture](architecture.png)
+
+
 ## Overview
 
 Ticket selling app based on Microservices architecture built with Node, React, Docker and Kubernetes. This project focuses on the production ready back-end, a simple React front-end is made just for demonstration and testing purposes.
